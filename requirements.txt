@@ -1,0 +1,7 @@
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+pynput>=1.7.6
+pygame>=2.5.0
+sounddevice>=0.5.0
+pyaudiowpatch>=0.2.12
+pillow>=10.0.0

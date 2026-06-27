@@ -1,0 +1,190 @@
+{
+  "audio_accessibility_enabled": true,
+  "audio_alerts_enabled": true,
+  "audio_detection_enabled": true,
+  "audio_detection_interval": 0.09,
+  "audio_detection_sensitivity": 0.91,
+  "audio_interval_seconds": 3.0,
+  "audio_minimum_volume": 0.009,
+  "audio_overlay_duration": 1.27,
+  "audio_overlay_enabled": true,
+  "audio_overlay_opacity": 0.76,
+  "audio_overlay_size": 143.0,
+  "camera_index": 0,
+  "camera_invert_movement": false,
+  "camera_mirror": false,
+  "camera_offset_x": 0.08,
+  "camera_offset_y": 1.0,
+  "camera_sensitivity": 1.0,
+  "camera_tracking_area": "full",
+  "camera_zoom": 1.25,
+  "controller_button_mappings": {
+    "A": {
+      "key": "space",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "B": {
+      "key": "enter",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "DPad Down": {
+      "key": "mouse:down",
+      "mode": "hold",
+      "repeat_rate": 10
+    },
+    "DPad Left": {
+      "key": "mouse:left",
+      "mode": "hold",
+      "repeat_rate": 10
+    },
+    "DPad Right": {
+      "key": "mouse:right",
+      "mode": "hold",
+      "repeat_rate": 10
+    },
+    "DPad Up": {
+      "key": "mouse:up",
+      "mode": "hold",
+      "repeat_rate": 10
+    },
+    "L3": {
+      "key": "shift",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "LB": {
+      "key": "q",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "LT": {
+      "key": "mouse:right_click",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "R3": {
+      "key": "ctrl",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "RB": {
+      "key": "r",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "RT": {
+      "key": "mouse:left_click",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "Select": {
+      "key": "tab",
+      "mode": "turbo",
+      "repeat_rate": 10
+    },
+    "Start": {
+      "key": "escape",
+      "mode": "hold",
+      "repeat_rate": 10
+    },
+    "X": {
+      "key": "e",
+      "mode": "tap",
+      "repeat_rate": 10
+    },
+    "Y": {
+      "key": "f",
+      "mode": "tap",
+      "repeat_rate": 10
+    }
+  },
+  "controller_deadzone": 0.18,
+  "controller_enabled": true,
+  "controller_mouse_enabled": true,
+  "controller_mouse_sensitivity": 18.0,
+  "controller_mouse_settings": {
+    "acceleration_enabled": false,
+    "acceleration_factor": 1.4,
+    "deadzone": 0.18,
+    "digital_mouse_step": 18.0,
+    "invert_x": false,
+    "invert_y": false,
+    "smoothing": 0.35,
+    "x_sensitivity": 48.11,
+    "y_sensitivity": 48.84
+  },
+  "controller_stick_settings": {
+    "left_stick": {
+      "down": {
+        "key": "s",
+        "mode": "tap",
+        "repeat_rate": 10
+      },
+      "left": {
+        "key": "a",
+        "mode": "tap",
+        "repeat_rate": 10
+      },
+      "mode": "mouse",
+      "right": {
+        "key": "d",
+        "mode": "tap",
+        "repeat_rate": 10
+      },
+      "up": {
+        "key": "w",
+        "mode": "tap",
+        "repeat_rate": 10
+      }
+    },
+    "right_stick": {
+      "down": {
+        "key": "down",
+        "mode": "tap",
+        "repeat_rate": 10
+      },
+      "left": {
+        "key": "left",
+        "mode": "tap",
+        "repeat_rate": 10
+      },
+      "mode": "disabled",
+      "right": {
+        "key": "right",
+        "mode": "tap",
+        "repeat_rate": 10
+      },
+      "up": {
+        "key": "up",
+        "mode": "tap",
+        "repeat_rate": 10
+      }
+    }
+  },
+  "controller_trigger_clicks_enabled": true,
+  "gesture_mappings": {
+    "closed_fist": "u",
+    "finger_count_1": "h",
+    "finger_count_2": "o",
+    "finger_count_3": "l",
+    "finger_count_4": "a",
+    "finger_count_5": "space",
+    "finger_count_6": "u",
+    "finger_count_7": "p",
+    "left_movement": "p",
+    "right_movement": "d"
+  },
+  "gesture_recognition_enabled": true,
+  "hearing_assistance": false,
+  "high_contrast": false,
+  "input_cooldown_seconds": 2.85,
+  "language": "en",
+  "large_text": false,
+  "profile": "custom",
+  "reduced_motion": false,
+  "simplified_ui": false,
+  "simulate_inputs": false,
+  "theme": "dark"
+}
