@@ -1,43 +1,52 @@
-# Adaptive Gaming Accessibility MVP
+# Adaptive Gaming Accessibility System
 
-Experimental desktop prototype for a university research project on cyberculture,
-accessibility, and adaptive interaction in video games.
+Desktop accessibility middleware for PC gaming, developed as an academic
+research prototype for inclusive interaction, adaptive input, and cyberculture
+studies.
 
-The app acts as a middleware layer between a player and a PC game. It detects
-available input devices, recognizes simple webcam gestures, maps gestures to
-keyboard commands, and shows simulated visual alerts for deaf or hard-of-hearing
-players.
+The application sits between the player and a PC game. It detects available
+devices, maps adaptive inputs to keyboard and mouse actions, recognizes webcam
+hand gestures, supports controller remapping, and provides visual alerts for
+audio events.
 
 ## Features
 
-- Device detection for keyboard, mouse, webcam, gamepad, and simulated adaptive
-  controllers.
-- Webcam gesture recognition using MediaPipe when available, with an OpenCV
-  motion fallback.
-- Gesture-to-command mapping:
-  - left movement -> `A`
-  - right movement -> `D`
-  - open hand -> `Space`
-  - closed fist -> `Enter`
-- Simulated audio accessibility events:
-  - left danger indicator
-  - right danger indicator
-  - nearby action alert
-- Tkinter desktop UI with status monitor and live visual cues.
-- Modular object-oriented architecture.
+- Device detection for keyboard, mouse, webcam, gamepads, and simulated
+  adaptive controllers.
+- Webcam gesture recognition with MediaPipe and OpenCV fallback.
+- Finger-count gesture mapping for one or two hands.
+- Xbox and generic controller mapping with keyboard and mouse simulation.
+- Button activation modes: tap, hold, and turbo.
+- Analog stick mouse control and configurable digital/custom stick modes.
+- Live visual audio alerts with loopback audio detection when available.
+- English and Spanish interface.
+- Persistent JSON settings and accessibility profiles.
+- Modular Python architecture for future adaptive device support.
+
+## Technologies
+
+- Python
+- Tkinter / ttk
+- OpenCV
+- MediaPipe
+- Pygame
+- pynput
+- sounddevice / pyaudiowpatch
 
 ## Project Structure
 
 ```text
 adaptive_accessibility/
-  __init__.py
-  audio_assist.py
-  devices.py
-  gestures.py
-  input_mapper.py
-  ui.py
+  config/
+  core/
+  models/
+  services/
+  ui/
+  utils/
 main.py
 requirements.txt
+run_app.ps1
+setup_venv.ps1
 ```
 
 ## Setup
@@ -54,10 +63,6 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-If PowerShell shows a path such as `C:\Python314\...`, the virtual environment
-is not active. Activate `.venv` again before installing dependencies or running
-the app.
-
 You can also use the included helper scripts:
 
 ```powershell
@@ -65,13 +70,24 @@ You can also use the included helper scripts:
 .\run_app.ps1
 ```
 
-`tkinter` is included with most Python distributions. If MediaPipe is not
-available on your Python version, the app still runs with the OpenCV fallback,
-but hand-shape gestures are more limited.
+If PowerShell shows a path such as `C:\Python314\...`, the virtual environment
+is not active. Activate `.venv` again before installing dependencies or running
+the app.
 
-## Research Prototype Notes
+## Notes
 
-The prototype defaults to simulation-friendly behavior. Real keyboard injection
-requires `pynput`; when unavailable, commands are logged in the UI instead. For
-safe testing, keep input simulation enabled until you are ready to send commands
+This is a research MVP, not a commercial release. For safe testing, keep input
+simulation enabled until you are ready to send real keyboard or mouse commands
 to another application.
+
+## Espanol
+
+Sistema de accesibilidad para videojuegos desarrollado como prototipo academico.
+La aplicacion funciona como una capa intermedia entre el jugador y el juego,
+permitiendo controles adaptativos, reconocimiento gestual, mapeo de controles y
+alertas visuales para eventos de audio.
+
+Proyecto academico desarrollado para la carrera de Ingenieria en Informatica de
+la Universidad de Palermo.
+
+Author: Ricardo Morales
